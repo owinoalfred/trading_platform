@@ -1,13 +1,5 @@
-from PyQt5.QtWidgets import QApplication, QMainWindow, QLabel
-
-class MainWindow(QMainWindow):
-    def __init__(self):
-        super().__init__()
-
-        self.setWindowTitle("Trading Platform")
-
-        label = QLabel("Hello, PyQt!")
-        self.setCentralWidget(label)
+from PyQt5.QtWidgets import QApplication
+from components.main_window import MainWindow
 
 def main():
     app = QApplication([])
